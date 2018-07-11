@@ -7,6 +7,7 @@ class Home extends Component {
     render() {
         return (
             <div>
+            
                 <h1>You Are On the Recipes Detail Page!</ h1>
 
                 <p>{this.props.name}</p>
