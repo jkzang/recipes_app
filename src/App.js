@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import recipes from './store/Recipes'
+import Header from './components/Header'
 import Home from './pages/home'
 import RecipeIndex from './pages/RecipeIndex'
 import RecipeDetail from './pages/RecipeDetail'
@@ -17,11 +18,12 @@ class App extends Component {
             <div>
             <Router>
                 <div>
+                    <Header/>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/index" component={RecipeIndex} />
-                    <Route exact path="/details" component={RecipeDetail} />
+                    <Route exact path="/index/:id" component={RecipeDetail} />
                 </div>
-            </Router
+            </Router>
             </div>
         );
     }
