@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 
-class Header extends Component {
+class Four extends Component {
     render() {
         return (
             <div>
                 <nav>
                     <ul>
+                        <li>You are lost</li>
+
                         <li><Link to="/">HOME</Link></li>
-                        <li><Link to="/index">RECIPE INDEX</Link></li>
+
                     </ul>
                 </nav>
             </div>
@@ -16,4 +18,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default Four;

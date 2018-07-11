@@ -7,8 +7,6 @@ class RecipeIndex extends Component {
         this.setState({recipes: recipes})
     }
     render(){
-    console.log(this.state.recipes[0].id);
-    console.log(this.state.recipes[1].id);
         return (
             <div>
                 <h1>You Are On The Recipes Index Page</h1>
