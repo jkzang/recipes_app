@@ -1,11 +1,13 @@
 const recipes = [
   {
-    id: 1,
-    name: 'Mac & cheese'
+    id: 0,
+    name: 'Mac & cheese',
+    details: "Carlos's Favorite!"
   },
   {
-    id: 2,
-    name: 'Tofu Burger'
+    id: 1,
+    name: 'Tofu Burger',
+    details: "Heatlhy Choice"
   }
 ]
 

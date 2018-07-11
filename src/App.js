@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import recipes from './store/Recipes'
+import Header from './components/Header'
 import Home from './pages/home'
-import RecipeIndex from './pages/recipes_index'
+import RecipeIndex from './pages/RecipeIndex'
+import RecipeDetail from './pages/RecipeDetail'
 
 import {
     BrowserRouter as Router,
@@ -15,8 +17,13 @@ class App extends Component {
         return (
             <div>
             <Router>
-                
-            </Router
+                <div>
+                    <Header/>
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/index" component={RecipeIndex} />
+                    <Route exact path="/index/:id" component={RecipeDetail} />
+                </div>
+            </Router>
             </div>
         );
     }
